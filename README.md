@@ -4,14 +4,14 @@
 
 ### Features
 
-* **Renders Markdown into a react-native WebView component.**
-* **Automatically opens links in the system browser.**
-* Customization with pure CSS.
+- **Renders Markdown into a react-native WebView component.**
+- **Automatically opens links in the system browser.**
+- Customization with pure CSS.
 
 ### Installation
 
 ```bash
-npm install --save react-native-showdown
+npm install --save markdown-view
 ```
 
 ### Use as React component
@@ -19,30 +19,30 @@ npm install --save react-native-showdown
 Really simple markdown example with ES6/JSX:
 
 ```jsx
-import Markdown from 'react-native-showdown';
+import Markdown from "markdown-view";
 
 class Example extends Component {
-    render() {
-        var markdown = '# Welcome to React Native!\n\nMore content...';
-        return <Markdown body={ markdown } />
-    }
+	render() {
+		var markdown = "# Welcome to React Native!\n\nMore content...";
+		return <Markdown body={markdown} />;
+	}
 }
 ```
 
 ### Available props / converter options
 
-* `title` String, optional, plain text which will be used for the title, normally not shown, so you can skip this.
-* `body` String, required, markdown body which will be shown as webview content.
-* `pureCSS` String, optional, pure CSS which will be used to style the webview content.
-* `automaticallyAdjustContentInsets` Bool, optional, see [ScrollView#automaticallyAdjustContentInsets](http://facebook.github.io/react-native/docs/scrollview.html#automaticallyadjustcontentinsets)
-* `style` mixed, optional (default `{ flex: 1 }`), see [View#style](http://facebook.github.io/react-native/docs/view.html#style)
-* `options` Object, optional (default `{simplifiedAutoLink: true, strikethrough: true, tables: true}`), see [Showdown#options](https://github.com/showdownjs/showdown#valid-options)
+- `title` String, optional, plain text which will be used for the title, normally not shown, so you can skip this.
+- `body` String, required, markdown body which will be shown as webview content.
+- `pureCSS` String, optional, pure CSS which will be used to style the webview content.
+- `automaticallyAdjustContentInsets` Bool, optional, see [ScrollView#automaticallyAdjustContentInsets](http://facebook.github.io/react-native/docs/scrollview.html#automaticallyadjustcontentinsets)
+- `style` mixed, optional (default `{ flex: 1 }`), see [View#style](http://facebook.github.io/react-native/docs/view.html#style)
+- `options` Object, optional (default `{simplifiedAutoLink: true, strikethrough: true, tables: true}`), see [Showdown#options](https://github.com/showdownjs/showdown#valid-options)
 
 ### Run the example
 
 ```bash
-git clone https://github.com/jerolimov/react-native-showdown.git
-cd react-native-showdown/examples
+git clone https://github.com/Faisal50x/markdown-view.git
+cd markdown-view/examples
 npm install
 ```
 
@@ -50,11 +50,13 @@ Run the react-native project like any react-native project.
 
 ### Credits
 
+Fork From [react-native-showdown](https://github.com/jerolimov/react-native-showdown)
+
 Project is based on the markdown parser [Showdown](https://github.com/showdownjs/showdown).
 
 ### Alternatives
 
-* [react-native-markdown](https://github.com/lwansbrough/react-native-markdown)
+- [react-native-markdown](https://github.com/lwansbrough/react-native-markdown)
   which tries to render markdown as native components (instead of using a WebView).
 
 [travis-image]: https://img.shields.io/travis/jerolimov/react-native-showdown/master.svg?style=flat-square
