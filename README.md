@@ -42,7 +42,7 @@ class Example extends Component {
 
 ```bash
 git clone https://github.com/Faisal50x/markdown-view.git
-cd markdown-view/examples
+cd markdown-view/example
 npm install
 ```
 
